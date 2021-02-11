@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Manejate - Seguros</title>
+</head>
+<body>
+
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+     				 <img class="d-block w-100" src="img/auto-5148314_960_720.gif" alt="First slide" width="100%" height="60%">
+   				</div>
+ 			</div>
+		</div>
+
+		<nav>
+			<label class="logo">Manejate</label>
+			<img class="s" src="img/Letter-S-PNG-Photo.png">
+			<ul>
+				<li><a class="active" href="#">Cotizador</a></li>
+				<li><a href="#">Quienes Somos</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Ayuda</a></li>
+			</ul>
+			<label id="fas fa-bars"></label>
+		</nav>
+		
+	<section>
+			<div class="formulario">
+			<form>
+
+				<div id="msj-error.cotizador"></div>
+
+				<div class="nombre">
+					<ul>
+					  <li>
+					    <label for="nombre">Nombre:</label>
+					    <input type="text" id="nombre" name="nombreusuario">
+					  </li>
+					   <li>
+					    <label for="apellido">Apellido:</label>
+					    <input type="text" id="apellido" name="apellidousuario">
+					  </li>
+
+					  <li>
+					    <label for="mail">E-mail:</label>
+					    <input type="email" id="mail" name="mailusuario">
+					  </li>
+		 			</ul>
+				</div>
+
+			    <div class="campo">
+			    	<label>Marca</label>
+			    	<select name="marca" id="marca">
+			    		<option value="">-- Seleccione --</option>
+			    		<option value="americano">Americano</option>
+			    		<option value="europeo">Europeo</option>
+			    		<option value="asiatico">Asiatico</option>
+			    	</select>
+			    </div>
+
+			    <div class="campo">
+			    	<label>Año</label>
+			    	<select name="año" id="año">
+			    		<option value="">-- Seleccione --</option>
+			    		<option value="2021">2021</option>
+			    		<option value="2020">2020</option>
+			    		<option value="2019">2019</option>
+			    		<option value="2018">2018</option>
+			    		<option value="2017">2017</option>
+			    		<option value="2016">2016</option>
+			    		<option value="2015">2015</option>
+			    		<option value="2014">2014</option>
+			    		<option value="2013">2013</option>
+			    		<option value="2012">2012</option>
+			    		<option value="2011">2011</option>
+			    		<option value="2010">2010</option>
+			    		<option value="2009">2009</option>
+			    		<option value="2008">2008</option>
+			    		<option value="2007">2007</option>
+			    		<option value="2006">2006</option>
+			    		<option value="2005">2005</option>
+			    		<option value="2004">2004</option>
+			    		<option value="2003">2003</option>
+			    		<option value="2002">2002</option>
+			    		<option value="2001">2001</option>
+			    		<option value="2000">2000</option>
+			    	</select>
+			    </div>
+
+			    <div class="campo">
+			    	<label>Tipo de Seguro</label>
+			    		<input
+				    		 type="radio" 
+				    		 name="plan"
+				    		 value="basico"
+				    		 class="radio"
+				    		 id="radioBasico"
+				    	/> Basico
+
+						<input
+				    		 type="radio" 
+				    		 name="plan"
+				    		 value="completo"
+				    		 class="radio"
+				    		 id="radioCompleto"
+				    	/> Completo
+				</div>
+
+					<div class="mensaje" id="msj"> Elige marca, año y tipo de seguro</div>
+					<div id="resumen" style="display: none;"></div>
+					<div class="" id="resultado" style="display: none;"></div>
+
+				<input type="button" id="scriptBox" onclick="procesarDatosDelForm();" class="button-primary" value="cotizar" onkeypress="enter (event)" />
+
+				<div class="datoscotizacion">
+					<h1 id="cotizacion"></h1>
+				</div>
+
+				</form>
+
+				
+
+			</div>
+		    
+		</section>
+
+	    <script src="script.js"></script>  
+	    <!--Javascript-->
+
+
+	     <footer>
+	       
+	       <div class="container-footer-all">
+	        
+	            <div class="container-body">
+
+	                <div class="colum1">
+	                    <h1>Mas informacion de la compañia</h1>
+
+	                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+	                </div>
+
+	                <div class="colum2">
+
+	                    <h1>Redes Sociales</h1>
+
+	                    <div class="row">
+	                        <img src="img/facebook.png">
+	                        <label>Siguenos en Facebook</label>
+	                    </div>
+	                    <div class="row">
+	                        <img src="img/twitter.png">
+	                        <label>Siguenos en Twitter</label>
+	                    </div>
+	                    <div class="row">
+	                        <img src="img/instagram.png">
+	                        <label>Siguenos en Instagram</label>
+	                    </div>
+	                    <div class="row">
+	                        <img src="img/google-plus.png">
+	                        <label>Siguenos en Google Plus</label>
+	                    </div>
+	                    <div class="row">
+	                        <img src="img/pinterest.png">
+	                        <label>Siguenos en Pinteres</label>
+	                    </div>
+
+
+	                </div>
+
+	                <div class="colum3">
+
+	                    <h1>Informacion Contactos</h1>
+
+	                    <div class="row2">
+	                        <img src="img/house.png">
+	                        <label>Córdoba, 
+	                        Argentina
+	                        </label>
+	                    </div>
+
+	                    <div class="row2">
+	                        <img src="img/smartphone.png">
+	                        <label>+54 351 0000000</label>
+	                    </div>
+
+	                    <div class="row2">
+	                        <img src="img/contact.png">
+	                         <label>manejateseguros@gmail.com</label>
+	                    </div>
+
+	                </div>
+
+	            </div>
+	        
+	        </div>
+	        
+	        <div class="container-footer">
+	               <div class="footer">
+	                    <div class="copyright">
+	                        © 2017 Todos los Derechos Reservados | <a href="">Manejate Seguros</a>
+	                    </div>
+
+	                    <div class="information">
+	                        <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+	                    </div>
+	                </div>
+
+	            </div>
+	        
+	   	 </footer>
+
+	</body>
+
+</html>
+
